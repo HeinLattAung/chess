@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    background: url('https://i.pinimg.com/736x/9f/d9/b2/9fd9b2b2bf6192c55a03f8358053b0d4.jpg') no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    justify-content: center;
+}
+
+.div {
+    display: flex;
+}
+
+ul {
+
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+li {
+    list-style: none;
+    display: grid;
+    place-items: center;
+    font-size: 0;
+}
+
+.box {
+    margin: 1px;
+    width: 60px;
+    height: 60px;
+    box-shadow: 2px 2px 5px black;
+}
+
+h1 {
+    margin: 10px;
+    font-size: 2rem;
+    text-align: center;
+    border: 2px solid black;  
+    padding: 5px;  
+    background-color: peru;
+    border-radius: 10px;
+}
+
+#tog {
+    margin: 20px 0;
+    font-size: 1.5em;
+    align-items: left;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+#reset-btn {
+    margin: 10px 0;
+    font-size: 1em;
+    align-items: center;
+    text-decoration: none;
+    background-color: rgb(255, 68, 0);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#reset-btn:hover {
+    background-color: darkblue;
+}
+
+#reset-btn:active {
+    background-color: blue;
+}
+
+img { 
+    width: 50px;
+    height: 50px;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .box {
+        width: 11vw;
+        height: 11vw;
+    }
+
+    img {
+        width: 8vw;
+        height: 8vw;
+    }
+
+    #tog {
+        font-size: 20px;
+        margin: 10px 0 0 0;
+    }
+
+    #reset-btn {
+        font-size: 15px;
+        padding: 5px 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    #tog {
+        font-size: 15px;
+        margin: 5px 0 0 0;
+    }
+
+    #reset-btn {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+}
